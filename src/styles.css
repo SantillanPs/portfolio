@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #64ffda;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.project-card {
+  transition: all 0.3s ease;
+  background-color: #172a45;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-badge {
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}
+
+.section-title::before {
+  content: "02.";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "Space Mono", monospace;
+}
+
+.hero-title {
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.blob {
+  filter: blur(60px);
+  opacity: 0.15;
+  position: absolute;
+  z-index: -1;
+}
